@@ -383,3 +383,85 @@ export const DataFourth = [
     ],
   },
 ];
+// sorav helper end
+
+// rahul helper start
+export const cardData = [
+  {
+    img: "/img/News-1st-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 237,
+  },
+  {
+    img: "/img/News-2nd-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    date: "September 10, 2021 by Admin",
+    comment: 31,
+    height: 340,
+  },
+  {
+    img: "/img/News-3rd-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 250,
+  },
+  {
+    img: "/img/News-4th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 250,
+  },
+  {
+    img: "/img/News-5th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 238,
+  },
+  {
+    img: "/img/News-6th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    date: "September 10, 2021 by Admin",
+    comment: 31,
+    height: 340,
+  },
+  {
+    img: "/img/News-7th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
+    date: "September 10, 2021 by Admin",
+    comment: 31,
+    height: 340,
+  },
+  {
+    img: "/img/News-8th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 250,
+  },
+  {
+    img: "/img/News-9th-card-img.png",
+    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    date: "September 10, 2021 by Admin",
+    comment: 10,
+    height: 238,
+  },
+];
+// rahul helper end
+
+// yakshit helper start
+export const reply = [
+  {
+    placeholder: "Name",
+    type: "text",
+  },
+  {
+    placeholder: "Email",
+    type: "email",
+  },
+];
+// yeakshit helper end

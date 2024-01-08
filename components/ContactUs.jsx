@@ -1,13 +1,16 @@
 import Image from "next/image";
+import HeaderBanner from "./common/HeaderBanner";
 
 const ContactUs = () => {
   return (
     <>
+      <HeaderBanner heading="Contact Us" />
+
       {/* contact info and get in touch */}
       <div className="bg-white px-3 py-[50px] font-poppins">
-        <div className="max-w-[1052px] w-full mx-auto p-[20px] sm:p-[30px] flex flex-col lg:flex-row items-start justify-between gap-[50px] lg:gap-3 bg-[#80C4D3] rounded-lg">
+        <div className="max-w-[1052px] w-full mx-auto p-[20px] sm:p-[30px] flex flex-col lg:flex-row items-center lg:items-start justify-between gap-[50px] lg:gap-3 bg-[#80C4D3] rounded-lg">
           {/* contact info */}
-          <div className="max-w-[414px] w-full flex flex-col items-start justify-center gap-[30px]">
+          <div className="max-w-[414px] w-full flex flex-col items-center lg:items-start justify-center gap-[30px]">
             {/* heading */}
             <div className="flex items-center justify-center gap-[10px]">
               {/* small circle */}
@@ -70,7 +73,7 @@ const ContactUs = () => {
           </div>
 
           {/* get in touch */}
-          <div className="lg:max-w-[486px] w-full flex flex-col items-start justify-center">
+          <div className="max-w-[486px] w-full flex flex-col items-center lg:items-start justify-center">
             {/* heading */}
             <div className="flex items-center justify-center gap-[10px]">
               {/* small circle */}

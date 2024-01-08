@@ -11,16 +11,16 @@ export const GallerySearchIcon = () => {
       <path
         d="M11.334 19.4699C15.7523 19.4699 19.334 15.8536 19.334 11.3927C19.334 6.93182 15.7523 3.31555 11.334 3.31555C6.91571 3.31555 3.33398 6.93182 3.33398 11.3927C3.33398 15.8536 6.91571 19.4699 11.334 19.4699Z"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M21.3339 21.4893L16.9839 17.0973"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -251,8 +251,8 @@ export function Arrowicon() {
         <path
           d="M7 3.76266L4.375 1M7 3.76266L4.375 6M7 3.76266L1 3.76422"
           stroke="white"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </>
@@ -273,11 +273,11 @@ export const BtnIcon = () => {
         fill="none"
       >
         <path
-          className="group-hover:stroke-black"
+          className="group-hover:stroke-[#80C4D3]"
           d="M1 3.7658L17 3.76268M17 3.76268L13.5 0.999756M17 3.76268L13.5 6.00024"
           stroke="white"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </>
@@ -322,23 +322,23 @@ export const MusicIcon = () => {
         <path
           d="M9 18V5L21 3V16"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M6 21C7.65685 21 9 19.6569 9 18C9 16.3431 7.65685 15 6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M18 19C19.6569 19 21 17.6569 21 16C21 14.3431 19.6569 13 18 13C16.3431 13 15 14.3431 15 16C15 17.6569 16.3431 19 18 19Z"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </>

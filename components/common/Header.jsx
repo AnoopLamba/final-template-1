@@ -1,9 +1,12 @@
 import Image from "next/image";
-import React from "react";
-import { Arrowicon, Darkbtnicon, Sidebaricon } from "./icon";
+import { Darkbtnicon, Sidebaricon } from "./icon";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import HeaderBanner from "./HeaderBanner";
 
 function Header() {
+  const router = useRouter();
+
   return (
     <>
       <nav className="max-w-[1064px] w-full mx-auto px-3">
@@ -20,38 +23,56 @@ function Header() {
           </div>
 
           {/* links */}
-          <ul className="flex gap-10 max-lg:hidden ">
-            <Link href="/">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                Home
-              </li>
+          <div className="flex gap-10 max-lg:hidden ">
+            <Link
+              href="/"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300
+              ${router.pathname === "/" ? "text-[#80C4D3]" : "text-black"}`}
+            >
+              Home
             </Link>
-            <Link href="/about">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                About us
-              </li>
+            <Link
+              href="/about"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300 ${
+                router.pathname === "/about" ? "text-[#80C4D3]" : "text-black"
+              } `}
+            >
+              About us
             </Link>
-            <Link href="/management">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                Management
-              </li>
+            <Link
+              href="/management"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300 ${
+                router.pathname === "/management"
+                  ? "text-[#80C4D3]"
+                  : "text-black"
+              }`}
+            >
+              Management
             </Link>
-            <Link href="/news">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                News & Event
-              </li>
+            <Link
+              href="/news"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300 
+              ${router.pathname === "/news" ? "text-[#80C4D3]" : "text-black"}`}
+            >
+              News & Event
             </Link>
-            <Link href="/gallery">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                Gallery
-              </li>
+            <Link
+              href="/gallery"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300 ${
+                router.pathname === "/gallery" ? "text-[#80C4D3]" : "text-black"
+              }`}
+            >
+              Gallery
             </Link>
-            <Link href="/contact">
-              <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
-                Contact us
-              </li>
+            <Link
+              href="/contact"
+              className={`font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300 ${
+                router.pathname === "/contact" ? "text-[#80C4D3]" : "text-black"
+              }`}
+            >
+              Contact us
             </Link>
-          </ul>
+          </div>
 
           <div className="flex items-center gap-5 sm:gap-10">
             <button>
@@ -61,24 +82,6 @@ function Header() {
             <button className="lg:hidden">
               <Sidebaricon />
             </button>
-          </div>
-        </div>
-
-        <div className="bg-[url('/img/Hero-bg.png')] bg-no-repeat bg-center bg-cover pb-5 sm:pb-[38px] md:pb-[48px] pt-5 sm:pt-10 md:pt-[50px] px-5 sm:px-10 md:px-[50px]">
-          <p className="text-white font-Roboto text-2xl sm:text-[33px] font-medium ">
-            About us
-          </p>
-
-          <div className="w-[133px] h-full pt-3 sm:pt-[22px] flex items-center justify-between">
-            <p className="text-[rgba(255,255,255,0.60)] font-Roboto text-[16px] font-normal">
-              Home
-            </p>
-            <div className="pt-[5px]">
-              <Arrowicon />
-            </div>
-            <p className="text-white font-Roboto text-[16px] font-medium">
-              About us
-            </p>
           </div>
         </div>
       </nav>

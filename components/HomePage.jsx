@@ -22,7 +22,7 @@ const HomePage = () => {
               </p>
               <button
                 type="submit"
-                className="flex max-md:mx-auto hover:bg-white hover:text-black duration-300 group gap-5 max-w-[186px] w-full h-[61px] mt-[30px] bg-[#80C4D3] rounded-[5px] items-center justify-center border-[2px] border-[#80C4D3] text-[20px] text-white"
+                className="flex max-md:mx-auto hover:bg-white duration-300 group gap-5 max-w-[186px] w-full h-[61px] mt-[30px] bg-[#80C4D3] rounded-[5px] items-center justify-center border-[2px] border-[#80C4D3] text-[20px] text-white hover:text-[#80C4D3] group"
               >
                 <span>More info</span>
                 <BtnIcon />
@@ -86,7 +86,7 @@ const HomePage = () => {
           </div>
           <button
             type="submit"
-            className="flex max-md:mx-auto hover:bg-white hover:text-black duration-300 group gap-5 max-w-[227px] w-full h-[61px] mt-[50px] bg-[#80C4D3] rounded-[5px] items-center justify-center border-[2px] border-[#80C4D3] text-[20px] text-white"
+            className="flex max-md:mx-auto hover:bg-white duration-300 group gap-5 max-w-[227px] w-full h-[61px] mt-[50px] bg-[#80C4D3] rounded-[5px] items-center justify-center border-[2px] border-[#80C4D3] text-[20px] text-white hover:text-[#80C4D3]"
           >
             <span>More Articles</span>
             <BtnIcon />

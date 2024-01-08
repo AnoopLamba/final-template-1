@@ -1,15 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import { FrIcon, IrIcon, TrIcon, WrIcon } from "./common/Icon";
+import { Arrowicon, FrIcon, IrIcon, TrIcon, WrIcon } from "./common/Icon";
 import Image from "next/image";
 import { DataFourth, Datasec, Datathird } from "./common/Helper";
+import HeaderBanner from "./common/HeaderBanner";
 
 const MangagementPage = () => {
   return (
     <>
+      <HeaderBanner heading="Management" />
+
       {/* Hero */}
-      <div className="max-w-[1152px] w-full mx-auto px-[12px]">
-        <div className="max-w-[1050px] w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-5">
+      <div className="max-w-[1152px] w-full mx-auto py-[50px] px-[12px]">
+        <div className="max-w-[1050px] w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-5">
           <div>
             <p className="text-[30px] text-[#80C4D3] font-poppins font-semibold leading-normal text-transparent-[uppercase]">
               The Founder
@@ -54,135 +57,138 @@ const MangagementPage = () => {
       </div>
 
       {/* Body */}
-      <div>
-        <div className="bg-[#F2F2F2]">
-          <div className="#F2F2F2">
-            <div className="text-[#80C4D3] font-poppins font-medium text-[30px] flex items-center gap-[10px] leading-normal pt-[50px] px-[12px] lg:px-[69px] ">
-              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
-              Meet our Management
-              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
-            </div>
-            <div className="mx-auto flex flex-wrap justify-center gap-[90px] px-[12px] mt-[117px] ">
-              {Datasec.map((item, index) => (
-                <div key={index} className=" relative">
-                  <Image
-                    className="absolute top-[-30%] left-[27%] mx-auto"
-                    src={item.img}
-                    width={120}
-                    height={120}
-                    alt="img"
-                  />
-                  <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
-                    {item.name}
-                  </p>
-                  <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
-                    {item.bio}
-                  </p>
-                  {item.logo.map((listt, listindex) => (
-                    <div
-                      key={listindex}
-                      className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                    >
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.facebook}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.whatsapp}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.insta}</Link>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+      <div className="bg-[#F2F2F2] pb-[50px]">
+        {/* management */}
+        <div>
+          <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] flex max-sm:justify-center items-center gap-[10px] leading-normal pt-[50px] px-[12px] md:px-[69px] text-center">
+            <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
+            Meet our Management
+            <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
           </div>
-          <div className="#F2F2F2">
-            <div className="pt-[50px] px-[12px] lg:px-[69px]">
-              <div className="text-[#80C4D3] font-poppins font-medium text-[30px] flex items-center gap-[10px]  leading-normal ">
-                <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
-                Meet our Staff
-                <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
+          <div className="mx-auto flex flex-wrap justify-center gap-[90px] px-[12px] mt-[117px] ">
+            {Datasec.map((item, index) => (
+              <div key={index} className=" relative">
+                <Image
+                  className="absolute top-[-30%] left-[27%] mx-auto"
+                  src={item.img}
+                  width={120}
+                  height={120}
+                  alt="img"
+                />
+                <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
+                  {item.name}
+                </p>
+                <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
+                  {item.bio}
+                </p>
+                {item.logo.map((listt, listindex) => (
+                  <div
+                    key={listindex}
+                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
+                  >
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.facebook}</Link>
+                    </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.whatsapp}</Link>
+                    </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.insta}</Link>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-            <div className="mx-auto flex flex-wrap justify-evenly gap-x-4 gap-y-[90px] px-[12px] mt-[117px] ">
-              {Datathird.map((item, index) => (
-                <div key={index} className=" relative">
-                  <Image
-                    className="absolute top-[-30%] left-[27%] mx-auto"
-                    src={item.img}
-                    width={120}
-                    height={120}
-                    alt="img"
-                  />
-                  <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
-                    {item.name}
-                  </p>
-                  <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
-                    {item.bio}
-                  </p>
-                  {item.logo.map((listt, listindex) => (
-                    <div
-                      key={listindex}
-                      className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                    >
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.facebook}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.whatsapp}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.insta}</Link>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
+            ))}
+          </div>
+        </div>
+
+        {/* staff */}
+        <div>
+          <div className="pt-[50px] px-[12px] lg:px-[69px]">
+            <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] flex items-center max-sm:justify-center gap-[10px]  leading-normal ">
+              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
+              Meet our Staff
+              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
             </div>
           </div>
-          <div className="#F2F2F2">
-            <div className="text-[#80C4D3] font-poppins font-medium text-[30px] pt-[50px] px-[12px] lg:px-[69px] flex items-center gap-[10px] leading-normal ">
-              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
-              Meet our NON-Staff
-              <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
-            </div>
-            <div className="mx-auto flex flex-wrap justify-evenly gap-x-4 gap-y-[90px] px-[12px] mt-[117px] ">
-              {DataFourth.map((item, index) => (
-                <div key={index} className=" relative">
-                  <Image
-                    className="absolute top-[-30%] left-[27%] mx-auto"
-                    src={item.img}
-                    width={120}
-                    height={120}
-                    alt="img"
-                  />
-                  <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
-                    {item.name}
-                  </p>
-                  <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
-                    {item.bio}
-                  </p>
-                  {item.logo.map((listt, listindex) => (
-                    <div
-                      key={listindex}
-                      className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                    >
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.facebook}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.whatsapp}</Link>
-                      </div>
-                      <div className="hover:cursor-pointer hover:scale-110">
-                        <Link href="">{listt.insta}</Link>
-                      </div>
+          <div className="mx-auto flex flex-wrap justify-evenly gap-x-4 gap-y-[90px] px-[12px] mt-[117px] ">
+            {Datathird.map((item, index) => (
+              <div key={index} className=" relative">
+                <Image
+                  className="absolute top-[-30%] left-[27%] mx-auto"
+                  src={item.img}
+                  width={120}
+                  height={120}
+                  alt="img"
+                />
+                <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
+                  {item.name}
+                </p>
+                <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
+                  {item.bio}
+                </p>
+                {item.logo.map((listt, listindex) => (
+                  <div
+                    key={listindex}
+                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
+                  >
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.facebook}</Link>
                     </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.whatsapp}</Link>
+                    </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.insta}</Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* non-staff */}
+        <div>
+          <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] pt-[50px] px-[12px] lg:px-[69px] flex items-center max-sm:justify-center gap-[10px] leading-normal ">
+            <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
+            Meet our NON-Staff
+            <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
+          </div>
+          <div className="mx-auto flex flex-wrap justify-evenly gap-x-4 gap-y-[90px] px-[12px] mt-[117px] ">
+            {DataFourth.map((item, index) => (
+              <div key={index} className=" relative">
+                <Image
+                  className="absolute top-[-30%] left-[27%] mx-auto"
+                  src={item.img}
+                  width={120}
+                  height={120}
+                  alt="img"
+                />
+                <p className="text-[#22343D] font-poppins font-semibold text-[22px]  leading-normal text-center mt-[77px]">
+                  {item.name}
+                </p>
+                <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
+                  {item.bio}
+                </p>
+                {item.logo.map((listt, listindex) => (
+                  <div
+                    key={listindex}
+                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
+                  >
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.facebook}</Link>
+                    </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.whatsapp}</Link>
+                    </div>
+                    <div className="hover:cursor-pointer hover:scale-110">
+                      <Link href="">{listt.insta}</Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>

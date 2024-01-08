@@ -31,7 +31,7 @@ function Footer() {
           <div className="flex justify-center mt-[10px] pb-[64px]">
             <button
               type="Submit"
-              className=" w-[100px] md:w-[129px] h-[36px] sm:h-[40px] md:h-[61px] text-white hover:scale-105 hover:text-[#80C4D3] hover:bg-transparent hover:border-[1px] hover:border-[#80C4D3] duration-300 bg-[#80C4D3] rounded-[5px] font-poppins text-[20px] not-italic font-normal leading-5"
+              className=" w-[100px] md:w-[129px] h-[36px] sm:h-[40px] md:h-[61px] text-white hover:text-[#80C4D3] hover:bg-transparent border-[2px] border-[#80C4D3] duration-300 bg-[#80C4D3] rounded-[5px] font-poppins text-[20px] not-italic font-normal leading-5"
             >
               Submit
             </button>

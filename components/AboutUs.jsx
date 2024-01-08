@@ -1,10 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { Doteicon } from "./common/Icon";
+import { Arrowicon, Doteicon } from "./common/Icon";
+import HeaderBanner from "./common/HeaderBanner";
 
 function AboutUs() {
   return (
     <>
+      <HeaderBanner heading="About Us" />
+
       <div className="bg-[#FFF]">
         <div className="max-w-[1052px] w-full mx-auto py-[40px] md:py-[52px] px-3">
           <div className="flex gap-[30px] md:gap-[50px] max-lg:flex-col">

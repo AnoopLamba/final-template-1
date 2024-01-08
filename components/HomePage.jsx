@@ -11,11 +11,11 @@ const HomePage = () => {
         <div className="max-w-[1152px] w-full mx-auto px-[50px] max-lg:px-4">
           <div className="flex max-md:flex-col items-center xl:items-end justify-between">
             <div className="max-w-[424px] max-md:max-w-[800px] w-full pb-[83px]">
-              <h1 className="font-Poppins text-[30px] font-semibold max-w-[285px] w-full leading-normal pt-[81px]">
+              <h1 className="font-poppins text-[30px] font-semibold max-w-[285px] w-full leading-normal pt-[81px]">
                 Lorem Ipsum dolor{" "}
                 <span className="font-medium text-[#80C4D3]">sit amet.</span>
               </h1>
-              <p className="max-w-[424px] max-md:max-w-[800px] max-md:text-center w-full font-Poppins max-sm:text-[18px] text-[20px] font-normal leading-[32px] pt-[30px]">
+              <p className="max-w-[424px] max-md:max-w-[800px] max-md:text-center w-full  font-poppins max-sm:text-[18px] text-[20px] font-normal leading-[32px] pt-[30px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod temp incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
@@ -47,10 +47,10 @@ const HomePage = () => {
                   <div className="w-[60px] h-[60px] rounded-[15px] flex justify-center items-center bg-[#80C4D3]">
                     <SportsIcon />
                   </div>
-                  <h1 className="text-[#22343D] text-[22px] font-Poppins font-semibold pt-5 leading-normal">
+                  <h1 className="text-[#22343D] text-[22px]  font-poppins font-semibold pt-5 leading-normal">
                     {item.name}
                   </h1>
-                  <p className="pt-[13px] max-w-[300px] font-Poppins font-normal w-full text-[#22343D]">
+                  <p className="pt-[13px] max-w-[300px]  font-poppins font-normal w-full text-[#22343D]">
                     {item.text}
                   </p>
                 </div>
@@ -61,7 +61,7 @@ const HomePage = () => {
       </div>
       <div>
         <div className="max-w-[1152px] w-full mx-auto px-[50px] max-lg:px-4">
-          <h1 className="text-[rgba(34,52,61,0.80)] font-Poppins text-[30px] font-medium uppercase pt-[30px]">
+          <h1 className="text-[rgba(34,52,61,0.80)]  font-poppins text-[30px] font-medium uppercase pt-[30px]">
             {" "}
             From OUR <span className="text-[#80C4D3]">Blog</span>
           </h1>
@@ -69,15 +69,15 @@ const HomePage = () => {
             {blog.map((item, index) => (
               <div key={index}>
                 <Image src={item.img} width={300} height={237} alt="img" />
-                <h1 className=" text-[20px] text-black max-w-[300px] w-full font-normal font-Poppins pt-5 leading-[32px]">
+                <h1 className=" text-[20px] text-black max-w-[300px] w-full font-normal  font-poppins pt-5 leading-[32px]">
                   {item.text}
                 </h1>
-                <p className="pt-5 text-[20px] text-black font-Poppins font-medium">
+                <p className="pt-5 text-[20px] text-black  font-poppins font-medium">
                   {item.date}
                 </p>
                 <div className="flex gap-[10px] mt-5 items-center">
                   <div>{item.comenticon}</div>
-                  <p className="text-black font-bold font-Poppins text-[30px] ">
+                  <p className="text-black font-bold  font-poppins text-[30px] ">
                     {item.coment}
                   </p>
                 </div>
@@ -100,7 +100,7 @@ const HomePage = () => {
       {/* Gallery Images */}
       <div className="bg-white pt-[30px] pb-[50px] px-4">
         <div className="max-w-[1152px] w-full mx-auto">
-          <span className="text-[rgba(34,52,61,0.70)] max-md:text-center max-w-[1050px] w-full mx-auto pt-3 font-Poppins text-[30px] font-medium uppercase">
+          <span className="text-[rgba(34,52,61,0.70)] max-md:text-center max-w-[1050px] w-full mx-auto pt-3  font-poppins text-[30px] font-medium uppercase">
             From Our <span className="text-[#80C4D3]">Gallery</span>
           </span>
           <GalleryImages />

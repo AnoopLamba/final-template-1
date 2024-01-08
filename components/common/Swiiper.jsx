@@ -8,7 +8,7 @@ import { staff } from "./Helper";
 export default function Swiiper() {
   return (
     <div className="bg-[#EDEDED] mt-[50px] pb-[40px]">
-      <h1 className="text-[rgba(34,52,61,0.70)] px-4 max-md:text-center max-w-[1050px] w-full mx-auto pt-3 font-Poppins text-[30px] font-medium uppercase">
+      <h1 className="text-[rgba(34,52,61,0.70)] px-4 max-md:text-center max-w-[1050px] w-full mx-auto pt-3 font-poppins text-[30px] font-medium uppercase">
         Meet Our <span className="text-[#80C4D3]">Staff</span>
       </h1>
 
@@ -49,7 +49,7 @@ export default function Swiiper() {
               className="mx-auto"
               alt="slide img"
             />
-            <p className="text-[#22343D] text-center font-Poppins text-[22px] max-md:text-[18px] max-sm:text-[16px] font-semibold pt-[10px]">
+            <p className="text-[#22343D] text-center font-poppins text-[22px] max-md:text-[18px] max-sm:text-[16px] font-semibold pt-[10px]">
               {item.name}
             </p>
             <p className="text-[#80C4D3] text-center text-[16px] font-normal">

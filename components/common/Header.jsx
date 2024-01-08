@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Arrowicon, Darkbtnicon, Sidebaricon } from "./icon";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -19,38 +20,37 @@ function Header() {
           </div>
 
           {/* links */}
-
           <ul className="flex gap-10 max-lg:hidden ">
-            <a href="">
+            <Link href="/">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 Home
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="/about">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 About us
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="/management">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 Management
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="/news">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 News & Event
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="/gallery">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 Gallery
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="/contact">
               <li className="text-black font-poppins text-[20px] font-normal hover:text-[#80C4D3] duration-300">
                 Contact us
               </li>
-            </a>
+            </Link>
           </ul>
 
           <div className="flex items-center gap-5 sm:gap-10">

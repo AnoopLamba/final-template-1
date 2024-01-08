@@ -41,7 +41,7 @@ const HomePage = () => {
             <h1 className="text-[rgba(34,52,61,0.80)] max-md:text-center pt-3 max-sm:text-[24px] text-[30px] font-medium uppercase">
               Some Of Our <span className="text-[#80C4D3]">Activies</span>
             </h1>
-            <div className="flex max-lg:flex-wrap justify-center mb-[32px] gap-[75px] mt-[50px]">
+            <div className="flex max-lg:flex-wrap justify-start mb-[32px] gap-[75px] mt-[50px]">
               {card.map((item, index) => (
                 <div key={index}>
                   <div className="w-[60px] h-[60px] rounded-[15px] flex justify-center items-center bg-[#80C4D3]">

@@ -3,12 +3,19 @@ import { Darkbtnicon, Sidebaricon } from "./icon";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import HeaderBanner from "./HeaderBanner";
+import Sidebar from "./Sidebar";
+import { useState } from "react";
 
 function Header() {
   const router = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
+      {/* sidebar */}
+      <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+
+      {/* main navigation */}
       <nav className="max-w-[1064px] w-full mx-auto px-3">
         <div className="flex justify-between items-center pt-6 pb-[10px]">
           {/* logo */}
@@ -79,7 +86,10 @@ function Header() {
               <Darkbtnicon />
             </button>
 
-            <button className="lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="lg:hidden"
+            >
               <Sidebaricon />
             </button>
           </div>

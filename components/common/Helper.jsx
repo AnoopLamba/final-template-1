@@ -1,6 +1,5 @@
 // Gallery Data Start
 import {
-  CommentIcon,
   FacebookIcon,
   FrIcon,
   InstagramIcon,
@@ -89,21 +88,18 @@ export const blog = [
     img: "/img/girl1.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     date: "September 10, 2021 by Admin",
-    comenticon: <CommentIcon />,
     coment: "10",
   },
   {
     img: "/img/girl2.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... ",
     date: "September 10, 2021 by Admin",
-    comenticon: <CommentIcon />,
     coment: "10",
   },
   {
     img: "/img/girl3.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     date: "September 10, 2021 by Admin",
-    comenticon: <CommentIcon />,
     coment: "10",
   },
 ];

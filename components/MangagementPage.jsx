@@ -30,16 +30,16 @@ const MangagementPage = () => {
               magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet.
             </p>
             <div className="flex gap-[25px] mt-[25px]">
-              <Link href="">
+              <Link className=" hover:scale-105" href="">
                 <FrIcon />{" "}
               </Link>
-              <Link href="">
+              <Link className=" hover:scale-105" href="">
                 <WrIcon />
               </Link>
-              <Link href="">
+              <Link className=" hover:scale-105" href="">
                 <IrIcon />
               </Link>
-              <Link href="">
+              <Link className=" hover:scale-105" href="">
                 <TrIcon />
               </Link>
             </div>
@@ -57,10 +57,10 @@ const MangagementPage = () => {
       </div>
 
       {/* Body */}
-      <div className="bg-[#F2F2F2] pb-[50px]">
+      <div className=" max-w-[1920px] w-full mx-auto bg-[#F2F2F2] pb-[50px]">
         {/* management */}
         <div>
-          <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] flex max-sm:justify-center items-center gap-[10px] leading-normal pt-[50px] px-[12px] md:px-[69px] text-center">
+          <div className="max-w-[1152px] w-full mx-auto text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] flex max-sm:justify-center items-center gap-[10px] leading-normal pt-[50px] px-[12px] md:px-[69px] text-center">
             <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
             Meet our Management
             <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
@@ -87,13 +87,19 @@ const MangagementPage = () => {
                     className="flex gap-[20px] mt-[18px] justify-center mx-auto "
                   >
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.facebook}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.whatsapp}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.insta}
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -103,8 +109,8 @@ const MangagementPage = () => {
         </div>
 
         {/* staff */}
-        <div>
-          <div className="pt-[50px] px-[12px] lg:px-[69px]">
+        <div className="max-w-[1152px] w-full mx-auto">
+          <div className=" w-full  pt-[50px] px-[12px] lg:px-[69px]">
             <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] flex items-center max-sm:justify-center gap-[10px]  leading-normal ">
               <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
               Meet our Staff
@@ -133,13 +139,19 @@ const MangagementPage = () => {
                     className="flex gap-[20px] mt-[18px] justify-center mx-auto "
                   >
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.facebook}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.whatsapp}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.insta}
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -149,7 +161,7 @@ const MangagementPage = () => {
         </div>
 
         {/* non-staff */}
-        <div>
+        <div className="max-w-[1152px] w-full mx-auto">
           <div className="text-[#80C4D3] font-poppins font-medium text-2xl sm:text-[30px] pt-[50px] px-[12px] lg:px-[69px] flex items-center max-sm:justify-center gap-[10px] leading-normal ">
             <div className="w-[9px] h-[9px] rounded-[50px] bg-[#80C4D3]"></div>
             Meet our NON-Staff
@@ -177,13 +189,19 @@ const MangagementPage = () => {
                     className="flex gap-[20px] mt-[18px] justify-center mx-auto "
                   >
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.facebook}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.whatsapp}
+                      </Link>
                     </div>
                     <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
+                      <Link className=" hover:scale-105" href="">
+                        {listt.insta}
+                      </Link>
                     </div>
                   </div>
                 ))}

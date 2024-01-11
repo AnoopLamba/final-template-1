@@ -1,3 +1,4 @@
+import Dropdown from "./common/Dropdown";
 import GalleryImages from "./common/GalleryImages";
 import HeaderBanner from "./common/HeaderBanner";
 import {
@@ -43,14 +44,11 @@ const GalleryPage = () => {
           </div>
 
           {/* Right */}
-          <div className="flex items-center justify-center rounded-[5px] bg-[#80C4D3] font-poppins text-sm font-medium leading-[21px] text-white divide-x-2 divide-white">
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
-              <span>Page</span>
+          <div className="flex gap-[1px]">
+            <button className="w-[75px] h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
+              Page
             </button>
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
-              <span>2</span>
-              <PaginationArrowDownIcon />
-            </button>
+            <Dropdown />
           </div>
         </div>
       </div>

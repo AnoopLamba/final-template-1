@@ -2,8 +2,8 @@ import { Arrowicon } from "./Icon";
 
 const HeaderBanner = ({ heading }) => {
   return (
-    <div className="max-w-[1920px] w-full  bg-[url('/img/Hero-bg.png')] mx-auto">
-      <div className=" max-w-[1152px] mx-auto  bg-no-repeat bg-center bg-cover pb-5 sm:pb-[38px] md:pb-[48px] pt-5 sm:pt-10 md:pt-[50px] px-5 sm:px-10 md:px-[50px]">
+    <div className="max-w-[1920px] w-full mx-auto bg-[url('/img/Hero-bg.png')] bg-no-repeat bg-center bg-cover pb-5 sm:pb-[38px] md:pb-[48px] pt-5 sm:pt-10 md:pt-[50px] px-5 sm:px-10 md:px-[50px]">
+      <div className="max-w-[1052px] w-full mx-auto flex flex-col items-start justify-center">
         <p className="text-white font-Roboto text-2xl sm:text-[33px] font-medium ">
           {heading}
         </p>

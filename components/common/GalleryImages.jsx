@@ -17,7 +17,7 @@ const GalleryImages = () => {
           />
 
           {/* black overlay with text */}
-          <div className="absolute group-hover:inset-0 bg-black bg-opacity-40 group-hover:flex flex-col items-center justify-center gap-1 sm:gap-4 lg:gap-6 p-3 sm:p-4">
+          <div className="absolute group-hover:inset-0 bg-black bg-opacity-40 group-hover:flex flex-col items-center justify-center gap-1 sm:gap-4 lg:gap-6 p-3 sm:p-4 transition-all duration-300 ease-in-out">
             <GallerySearchIcon />
             <span className="text-center text-xl font-normal text-white font-poppins">
               {item.imgText}

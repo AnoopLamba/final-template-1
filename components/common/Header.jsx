@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Darkbtnicon, Sidebaricon } from "./icon";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import HeaderBanner from "./HeaderBanner";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 
@@ -19,7 +18,7 @@ function Header() {
       <nav className="max-w-[1064px] w-full mx-auto px-3">
         <div className="flex justify-between items-center pt-6 pb-[10px]">
           {/* logo */}
-          <div>
+          <Link href="/">
             <Image
               className="max-sm:w-[90px]"
               src="/img/Logo-img.png"
@@ -27,7 +26,7 @@ function Header() {
               height={65}
               alt="logo"
             />
-          </div>
+          </Link>
 
           {/* links */}
           <div className="flex gap-10 max-lg:hidden ">
@@ -88,7 +87,7 @@ function Header() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden"
+              className="lg:hidden hover:scale-105 transition-all duration-150 ease-in-out"
             >
               <Sidebaricon />
             </button>

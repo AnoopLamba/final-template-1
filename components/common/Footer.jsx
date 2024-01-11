@@ -6,11 +6,16 @@ import {
   Twittericon,
   Whatsappicon,
 } from "./icon";
+import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
-      <div className='bg-[url("/img/footer-bg.png")] bg-no-repeat bg-center bg-cover px-3 mx-auto'>
+      {/* Join newsletter */}
+      <div className='max-w-[1920px] w-full mx-auto bg-[url("/img/footer-bg.png")] bg-no-repeat bg-center bg-cover px-3'>
         <div className="max-w-[706px] w-full mx-auto pb-5">
           <p className="text-[#80C4D3] text-center font-poppins lg:text-[30px] text-[18px] sm:text-[25px] not-italic font-normal lg:font-medium pt-[60px] lg:pt-[65px] leading-[30px] md:leading-[40px]">
             JOIN OUR NEWSLETTER{" "}
@@ -23,7 +28,7 @@ function Footer() {
         <form>
           <input
             type="email"
-            className="max-w-[900px] flex items-center w-full mx-auto bg-[#FFF] border-[2px] border-[#80C4D3] rounded-[5px] py-1 sm:py-3 md:py-5 px-2 md:px-4 outline-none placeholder:text-[#000] placeholder:font-poppins placeholder:text-[12px] md:placeholder:text-[20px]
+            className="max-w-[900px] flex items-center w-full mx-auto bg-[#FFF] border-[2px] border-[#80C4D3] rounded-[5px] py-1 sm:py-3 md:py-5 px-2 md:px-4 outline-none placeholder:font-poppins placeholder:text-[12px] md:placeholder:text-[20px]
             font-light sm:font-normal"
             placeholder="Enter your email to recieve our newsletter"
           />
@@ -39,73 +44,116 @@ function Footer() {
         </form>
       </div>
 
-      <div className="bg-[#80C4D3] py-[50px] lg:px-3 px-3">
+      {/* Footer links */}
+      <div className="max-w-[1920px] w-full mx-auto bg-[#80C4D3] py-[50px] lg:px-3 px-3 flex flex-col items-center justify-start">
         {/* logo */}
-        <p className="text-[#fff] text-center font-poppins text-[25px] pb-[40px] font-semibold">
-          Logo
-        </p>
+        <Link
+          href="/"
+          className="hover:scale-105 transition-all ease-in-out duration-100"
+        >
+          <Image
+            className="max-sm:w-[90px]"
+            src="/img/Logo-img.png"
+            width={120}
+            height={60}
+            alt="logo"
+          />
+        </Link>
 
         {/* line */}
-        <div className="max-w-[1052px] w-full mx-auto bg-white stroke-2 h-[1px]"></div>
+        <div className="max-w-[1052px] w-full mx-auto mt-5 bg-white stroke-2 h-[1px]"></div>
 
-        {/*text-- links */}
+        {/*text links */}
         <div className="max-w-[935px] mt-[50px]  w-full mx-auto">
           <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center gap-6 lg:gap-4">
-            <a href="">
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white  font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Home
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 About us
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Management
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 News & Event
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Gallery
               </li>
-            </a>
-            <a href="">
+            </Link>
+            <Link
+              href="/"
+              className="hover:scale-105 transition-all ease-in-out duration-100"
+            >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Contact us
               </li>
-            </a>
+            </Link>
           </ul>
         </div>
 
         {/* logo--links */}
         <div className="max-w-[280px] w-full flex justify-between mt-10 mx-auto">
-          <a href="">
+          <Link
+            href="/"
+            className="hover:scale-105 transition-all ease-in-out duration-100"
+          >
             <Facebookicon />
-          </a>
-          <a href="">
+          </Link>
+          <Link
+            href="/"
+            className="hover:scale-105 transition-all ease-in-out duration-100"
+          >
             <Twittericon />
-          </a>
-          <a href="">
+          </Link>
+          <Link
+            href="/"
+            className="hover:scale-105 transition-all ease-in-out duration-100"
+          >
             <Instaicon />
-          </a>
-          <a href="">
+          </Link>
+          <Link
+            href="/"
+            className="hover:scale-105 transition-all ease-in-out duration-100"
+          >
             <Whatsappicon />
-          </a>
-          <a href="">
+          </Link>
+          <Link
+            href="/"
+            className="hover:scale-105 transition-all ease-in-out duration-100"
+          >
             <Telegramicon />
-          </a>
+          </Link>
         </div>
 
         {/* copyright */}
         <p className="text-white font-poppins font-medium leading-5 text-center pt-9">
-          Copyright © 2021. All Right Reserved.
+          Copyright © {currentYear}. All Right Reserved.
         </p>
       </div>
     </>

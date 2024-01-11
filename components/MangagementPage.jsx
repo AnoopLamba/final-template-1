@@ -1,9 +1,14 @@
 import Link from "next/link";
 import React from "react";
-import { Arrowicon, FrIcon, IrIcon, TrIcon, WrIcon } from "./common/Icon";
 import Image from "next/image";
 import { DataFourth, Datasec, Datathird } from "./common/Helper";
 import HeaderBanner from "./common/HeaderBanner";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "./common/Icon";
 
 const MangagementPage = () => {
   return (
@@ -31,16 +36,16 @@ const MangagementPage = () => {
             </p>
             <div className="flex gap-[25px] mt-[25px]">
               <Link href="">
-                <FrIcon />{" "}
+                <FacebookIcon />
               </Link>
               <Link href="">
-                <WrIcon />
+                <WhatsappIcon />
               </Link>
               <Link href="">
-                <IrIcon />
+                <InstagramIcon />
               </Link>
               <Link href="">
-                <TrIcon />
+                <TwitterIcon />
               </Link>
             </div>
           </div>
@@ -81,22 +86,23 @@ const MangagementPage = () => {
                 <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
                   {item.bio}
                 </p>
-                {item.logo.map((listt, listindex) => (
-                  <div
-                    key={listindex}
-                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                  >
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
-                    </div>
+                <div className="flex gap-[20px] mt-[18px] justify-center mx-auto ">
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="#">
+                      <FacebookIcon />
+                    </Link>
                   </div>
-                ))}
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="#">
+                      <WhatsappIcon />
+                    </Link>
+                  </div>
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="#">
+                      <InstagramIcon />
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -127,22 +133,23 @@ const MangagementPage = () => {
                 <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
                   {item.bio}
                 </p>
-                {item.logo.map((listt, listindex) => (
-                  <div
-                    key={listindex}
-                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                  >
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
-                    </div>
+                <div className="flex gap-[20px] mt-[18px] justify-center mx-auto ">
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <FacebookIcon />
+                    </Link>
                   </div>
-                ))}
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <WhatsappIcon />
+                    </Link>
+                  </div>
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <InstagramIcon />
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -171,22 +178,23 @@ const MangagementPage = () => {
                 <p className="text-[#80C4D3] font-poppins font-semibold text-[16px]  leading-[26px] text-center">
                   {item.bio}
                 </p>
-                {item.logo.map((listt, listindex) => (
-                  <div
-                    key={listindex}
-                    className="flex gap-[20px] mt-[18px] justify-center mx-auto "
-                  >
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.facebook}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.whatsapp}</Link>
-                    </div>
-                    <div className="hover:cursor-pointer hover:scale-110">
-                      <Link href="">{listt.insta}</Link>
-                    </div>
+                <div className="flex gap-[20px] mt-[18px] justify-center mx-auto ">
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <FacebookIcon />
+                    </Link>
                   </div>
-                ))}
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <WhatsappIcon />
+                    </Link>
+                  </div>
+                  <div className="hover:cursor-pointer hover:scale-110">
+                    <Link href="">
+                      <InstagramIcon />
+                    </Link>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

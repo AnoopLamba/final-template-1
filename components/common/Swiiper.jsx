@@ -4,6 +4,8 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import { staff } from "./Helper";
+import Link from "next/link";
+import { FacebookIcon, InstagramIcon, WhatsappIcon } from "./Icon";
 
 export default function Swiiper() {
   return (
@@ -55,16 +57,26 @@ export default function Swiiper() {
             <p className="text-[#80C4D3] text-center text-[16px] font-normal">
               {item.quality}
             </p>
-            {item.logos.map((listt, listindex) => (
-              <div
-                key={listindex}
-                className="flex justify-center gap-[20px] mt-[10px] max-lg:mx-auto"
+            <div className="flex justify-center gap-[20px] mt-[10px] max-lg:mx-auto">
+              <Link
+                href="#"
+                className="hover:scale-105 transition-all duration-150 ease-in-out"
               >
-                <div>{listt.facebook}</div>
-                <div>{listt.whatsap}</div>
-                <div>{listt.insta}</div>
-              </div>
-            ))}
+                <FacebookIcon />
+              </Link>
+              <Link
+                href="#"
+                className="hover:scale-105 transition-all duration-150 ease-in-out"
+              >
+                <WhatsappIcon />
+              </Link>
+              <Link
+                href="#"
+                className="hover:scale-105 transition-all duration-150 ease-in-out"
+              >
+                <InstagramIcon />
+              </Link>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

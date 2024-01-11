@@ -7,7 +7,7 @@ const GalleryImages = () => {
       {galleryData.map((item) => (
         <div
           key={item.id}
-          class="relative inline-block group mb-[15px] min-[576px]:mb-[30px] sm:mb-[50px] min-[576px]:mr-[10px] sm:mr-[20px] md:mr-[25px] rounded-lg overflow-hidden cursor-pointer"
+          className="relative inline-block group mb-[15px] min-[576px]:mb-[30px] sm:mb-[50px] min-[576px]:mr-[10px] sm:mr-[20px] md:mr-[25px] rounded-lg overflow-hidden cursor-pointer"
         >
           {/* image */}
           <img

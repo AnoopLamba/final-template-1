@@ -1,13 +1,14 @@
 import React from "react";
-import {
-  Facebookicon,
-  Instaicon,
-  Telegramicon,
-  Twittericon,
-  Whatsappicon,
-} from "./icon";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  Telegramicon,
+  TwitterIcon,
+  WhatsappIcon,
+  WhiteFbIcon,
+  WhiteInstaIcon,
+  WhiteWhatsappIcon,
+} from "./Icon";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -66,6 +67,7 @@ function Footer() {
         {/*text links */}
         <div className="max-w-[935px] mt-[50px]  w-full mx-auto">
           <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center gap-6 lg:gap-4">
+            {/* home */}
             <Link
               href="/"
               className="hover:scale-105 transition-all ease-in-out duration-100"
@@ -74,40 +76,49 @@ function Footer() {
                 Home
               </li>
             </Link>
+
+            {/* about */}
             <Link
-              href="/"
+              href="/about"
               className="hover:scale-105 transition-all ease-in-out duration-100"
             >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 About us
               </li>
             </Link>
+
+            {/* management */}
             <Link
-              href="/"
+              href="/management"
               className="hover:scale-105 transition-all ease-in-out duration-100"
             >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Management
               </li>
             </Link>
+
+            {/* news */}
             <Link
-              href="/"
+              href="/news"
               className="hover:scale-105 transition-all ease-in-out duration-100"
             >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 News & Event
               </li>
             </Link>
+
+            {/* gallery */}
             <Link
-              href="/"
+              href="/gallery"
               className="hover:scale-105 transition-all ease-in-out duration-100"
             >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
                 Gallery
               </li>
             </Link>
+
             <Link
-              href="/"
+              href="/contact"
               className="hover:scale-105 transition-all ease-in-out duration-100"
             >
               <li className="text-white font-poppins max-lg:max-w-[141px] w-full lg:text-center mx-auto text-start  text-lg sm:text-[20px] font-medium leading-5">
@@ -123,25 +134,25 @@ function Footer() {
             href="/"
             className="hover:scale-105 transition-all ease-in-out duration-100"
           >
-            <Facebookicon />
+            <WhiteFbIcon />
           </Link>
           <Link
             href="/"
             className="hover:scale-105 transition-all ease-in-out duration-100"
           >
-            <Twittericon />
+            <WhiteTwitterIcon />
           </Link>
           <Link
             href="/"
             className="hover:scale-105 transition-all ease-in-out duration-100"
           >
-            <Instaicon />
+            <WhiteInstaIcon />
           </Link>
           <Link
             href="/"
             className="hover:scale-105 transition-all ease-in-out duration-100"
           >
-            <Whatsappicon />
+            <WhiteWhatsappIcon />
           </Link>
           <Link
             href="/"

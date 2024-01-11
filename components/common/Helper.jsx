@@ -1,15 +1,5 @@
 // Gallery Data Start
-import {
-  FacebookIcon,
-  FrIcon,
-  InstagramIcon,
-  IrIcon,
-  MusicIcon,
-  PaintingIcon,
-  SportsIcon,
-  WhatsapIcon,
-  WrIcon,
-} from "./Icon";
+import { MusicIcon, PaintingIcon, SportsIcon } from "./Icon";
 
 export const galleryData = [
   {
@@ -108,97 +98,41 @@ export const staff = [
     img: "/img/profile1.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile2.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile3.png",
     name: "Afuwape J. Abiodun ",
     quality: "Teacher",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile4.png",
     name: "Afuwape J. Abiodun ",
     quality: "Teacher",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile1.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile1.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile1.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
   {
     img: "/img/profile1.png",
     name: "Afuwape J. Abiodun ",
     quality: "Headmistress",
-    logos: [
-      {
-        facebook: <FacebookIcon />,
-        whatsap: <WhatsapIcon />,
-        insta: <InstagramIcon />,
-      },
-    ],
   },
 ];
 // yash helper end
@@ -209,37 +143,16 @@ export const Datasec = [
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector3.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector.png",
     name: "Afuwape J. Abiodun ",
     bio: "Teacher",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
 ];
 export const Datathird = [
@@ -247,86 +160,37 @@ export const Datathird = [
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
 
   {
     img: "/img/Vector3.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector.png",
     name: "Afuwape J. Abiodun ",
     bio: "Teacher",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
 ];
 export const DataFourth = [
@@ -334,49 +198,21 @@ export const DataFourth = [
     img: "/img/Vector2.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector3.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector3.png",
     name: "Afuwape J. Abiodun ",
     bio: "Headmaster",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
   {
     img: "/img/Vector.png",
     name: "Afuwape J. Abiodun ",
     bio: "Teacher",
-    logo: [
-      {
-        facebook: <FrIcon />,
-        whatsapp: <WrIcon />,
-        insta: <IrIcon />,
-      },
-    ],
   },
 ];
 // sorav helper end

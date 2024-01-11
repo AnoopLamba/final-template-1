@@ -8,7 +8,7 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <>
-      <div className="bg-[linear-gradient(180deg,#EDEDED_0%,#FFF_100%)]">
+      <div className=" max-w-[1920px] w-full mx-auto bg-[linear-gradient(180deg,#EDEDED_0%,#FFF_100%)]">
         <div className="max-w-[1152px] w-full mx-auto px-[50px] max-lg:px-4">
           <div className="flex max-md:flex-col items-center xl:items-end justify-between">
             <div className="max-w-[424px] max-md:max-w-[800px] w-full flex flex-col items-center sm:items-start pb-[83px]">

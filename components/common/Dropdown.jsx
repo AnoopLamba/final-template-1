@@ -17,9 +17,9 @@ const Dropdown = () => {
     <div className="w-[75px] ">
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative">
-          <Listbox.Button className="relative w-full  h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-r-[5px] flex items-center justify-center gap-[10px] ">
+          <Listbox.Button className="relative w-full  h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white  hover:text-[#80C4D3] duration-300 rounded-r-[5px] flex items-center justify-center gap-[10px] ">
             <span className="block truncate"> {selected.name}</span>
-            <span className="absolute inset-y-0 right-4 flex items-center">
+            <span className="absolute group inset-y-0 right-4 flex items-center ">
               <DropdownIcon />
             </span>
           </Listbox.Button>
@@ -38,7 +38,7 @@ const Dropdown = () => {
                   key={personIdx}
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                      active ? "bg-amber-100 text-amber-900" : "text-gray-900"
+                      active ? "bg-[#80C4D3] text-white" : "text-gray-900"
                     }`
                   }
                   value={person}

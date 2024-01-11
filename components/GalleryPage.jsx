@@ -1,3 +1,4 @@
+import Dropdown from "./common/Dropdown";
 import GalleryImages from "./common/GalleryImages";
 import HeaderBanner from "./common/HeaderBanner";
 import {
@@ -31,26 +32,23 @@ const GalleryPage = () => {
         {/* gallery pagination */}
         <div className="max-w-[1052px] w-full pb-[50px] mx-auto flex items-center justify-between">
           {/* left */}
-          <div className="flex items-center justify-center rounded-[5px] bg-[#80C4D3] font-poppins text-sm font-medium leading-[21px] text-white divide-x-2 divide-white">
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
+          <div className="flex items-center justify-center font-poppins text-sm font-medium leading-[21px] gap-[1px]">
+            <button className=" text-white bg-[#80C4D3] flex h-[61px] p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px] rounded-tl-[5px] rounded-bl-[5px] border-1 border-[#80C4D3] hover:bg-transparent hover:text-[#80C4D3] group transition-all duration-150 ease-in-out">
               <PaginationArrowLeftIcon />
               <span>Prev</span>
             </button>
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
-              <PaginationArrowRightIcon />
+            <button className=" text-white bg-[#80C4D3] flex h-[61px] p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px] rounded-tr-[5px] rounded-br-[5px] border-1 border-[#80C4D3] hover:bg-transparent hover:text-[#80C4D3] group transition-all duration-150 ease-in-out">
               <span>Next</span>
+              <PaginationArrowRightIcon />
             </button>
           </div>
 
           {/* Right */}
-          <div className="flex items-center justify-center rounded-[5px] bg-[#80C4D3] font-poppins text-sm font-medium leading-[21px] text-white divide-x-2 divide-white">
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
-              <span>Page</span>
+          <div className="flex gap-[1px]">
+            <button className="w-[75px] h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
+              Page
             </button>
-            <button className="flex p-[8px_12px] sm:p-[15px_20px] items-center justify-center gap-2 sm:gap-[10px]">
-              <span>2</span>
-              <PaginationArrowDownIcon />
-            </button>
+            <Dropdown />
           </div>
         </div>
       </div>

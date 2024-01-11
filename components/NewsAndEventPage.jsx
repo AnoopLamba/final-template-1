@@ -19,8 +19,8 @@ const NewsAndEventPage = () => {
     <div>
       <HeaderBanner heading="News & Event" />
 
-      <div className="bg-[#F2F2F2]">
-        <div className="max-w-[1152px] w-full mx-auto bg-white pt-[25px] sm:pt-[50px] pb-[33px] px-[16px] ">
+      <div className=" max-w-[1920px] w-full mx-auto">
+        <div className="xxl:max-w-[1152px] w-full mx-auto bg-white pt-[25px] sm:pt-[50px] pb-[33px] px-[16px] ">
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-[50px] max-w-[1052px] w-full mx-auto">
             <div>
               {" "}
@@ -106,7 +106,7 @@ const NewsAndEventPage = () => {
                   </p>
                   <Link
                     href="/news/07"
-                    className="  mt-[10px] font-poppins font-semibold uppercase text-[16px] text-[rgba(255,0,0,0.80)] leading-[24px]"
+                    className="  mt-[10px] font-poppins hover:text-[#80C4D3] font-semibold uppercase text-[16px] text-[rgba(255,0,0,0.80)] leading-[24px]"
                   >
                     Readmore <span>&gt; &gt; &gt;</span>
                   </Link>
@@ -135,7 +135,7 @@ const NewsAndEventPage = () => {
                   </p>
                   <Link
                     href="/news/07"
-                    className="  mt-[10px] font-poppins font-semibold uppercase text-[16px] text-[rgba(255,0,0,0.80)] leading-[24px]"
+                    className="  mt-[10px] font-poppins hover:text-[#80C4D3] font-semibold uppercase text-[16px] text-[rgba(255,0,0,0.80)] leading-[24px]"
                   >
                     Readmore <span>&gt; &gt; &gt;</span>
                   </Link>
@@ -145,69 +145,71 @@ const NewsAndEventPage = () => {
           </div>
         </div>
 
-        <div className="max-w-[1152px] w-full mx-auto bg-[#F2F2F2] p-[20px_16px_25px_16px] md:p-[30px_50px_50px_50px]">
-          <div className="flex items-center max-md:justify-center gap-[10px] ">
-            <DotIcon />
-            <p className=" font-poppins font-medium text-[20px] sm:text-[30px] uppercase text-[#80C4D3] leading-[30px] sm:leading-[45px]">
-              LatesT News & Event
-            </p>
-            <DotIcon />
-          </div>
-          <div className="flex flex-wrap gap-x-5 gap-y-[30px] sm:gap-y-[54px] justify-center md:justify-between pt-[20px] sm:pt-[50px]">
-            {cardData.map((item, index) => (
-              <div className="w-[300px]" key={index}>
-                <Image
-                  src={item.img}
-                  width={300}
-                  height={237}
-                  style={{ height: item.height }}
-                  alt="img"
-                />
-                <p className=" font-poppins font-normal text-[16px] sm:text-[20px] text-black leading-[24px] sm:leading-[32px] pt-[15px] sm:pt-[20px] ">
-                  {item.decs}
-                </p>
-                <p className=" font-poppins font-semibold text-[16px] sm:text-[20px] leading-[24px] sm:leading-[32px] text-black pt-[15px] sm:pt-[20px]">
-                  {" "}
-                  {item.date}
-                </p>
-                <div className="flex items-center justify-between pt-[15px] sm:pt-[20px]">
-                  <div className="flex gap-[10px] items-center">
-                    <CommentIcon />
-                    <p className=" font-poppins font-medium text-[16px] sm:text-[30px] text-black ">
-                      {item.comment}
-                    </p>
-                  </div>
-                  <Link
-                    href="/news/07"
-                    className="  font-poppins font-normal  text-[12px] text-[rgba(255,0,0,0.80)] leading-[21px]"
-                  >
-                    Readmore <span>&gt; &gt; &gt;</span>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className=" flex flex-wrap gap-[20px] justify-center sm:justify-between pt-[30px] sm:pt-[71px]">
-            <div className="flex gap-[1px]">
-              <button className="w-[80px] h-[61px] bg-[#80C4D3] flex items-center justify-center gap-[10px] font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
-                <span>
-                  <LeftArrowIcon />
-                </span>{" "}
-                Prev
-              </button>
-              <button className="w-[80px] h-[61px] bg-[#80C4D3] flex items-center justify-center gap-[10px] font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-r-[5px]">
-                {" "}
-                Next
-                <span>
-                  <RightArrowIcon2 />
-                </span>
-              </button>
+        <div className="bg-[#F2F2F2]">
+          <div className="max-w-[1152px] w-full mx-auto  p-[20px_16px_25px_16px] md:p-[30px_50px_50px_50px]">
+            <div className="flex items-center max-md:justify-center gap-[10px] ">
+              <DotIcon />
+              <p className=" font-poppins font-medium text-[20px] sm:text-[30px] uppercase text-[#80C4D3] leading-[30px] sm:leading-[45px]">
+                LatesT News & Event
+              </p>
+              <DotIcon />
             </div>
-            <div className="flex gap-[1px]">
-              <button className="w-[75px] h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
-                Page
-              </button>
-              <Dropdown />
+            <div className="flex flex-wrap gap-x-5 gap-y-[30px] sm:gap-y-[54px] justify-center md:justify-between pt-[20px] sm:pt-[50px]">
+              {cardData.map((item, index) => (
+                <div className="w-[300px]" key={index}>
+                  <Image
+                    src={item.img}
+                    width={300}
+                    height={237}
+                    style={{ height: item.height }}
+                    alt="img"
+                  />
+                  <p className=" font-poppins font-normal text-[16px] sm:text-[20px] text-black leading-[24px] sm:leading-[32px] pt-[15px] sm:pt-[20px] ">
+                    {item.decs}
+                  </p>
+                  <p className=" font-poppins font-semibold text-[16px] sm:text-[20px] leading-[24px] sm:leading-[32px] text-black pt-[15px] sm:pt-[20px]">
+                    {" "}
+                    {item.date}
+                  </p>
+                  <div className="flex items-center  justify-between pt-[15px] sm:pt-[20px]">
+                    <div className="flex gap-[10px] hover:scale-105  items-center">
+                      <CommentIcon />
+                      <p className=" font-poppins  font-medium text-[16px] sm:text-[30px] text-black ">
+                        {item.comment}
+                      </p>
+                    </div>
+                    <Link
+                      href="/news/07"
+                      className="  font-poppins font-normal hover:text-[#80C4D3]  text-[12px] text-[rgba(255,0,0,0.80)] leading-[21px]"
+                    >
+                      Readmore <span>&gt; &gt; &gt;</span>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className=" flex flex-wrap gap-[20px] justify-center sm:justify-between pt-[30px] sm:pt-[71px]">
+              <div className="flex gap-[1px]">
+                <button className="w-[80px] h-[61px] bg-[#80C4D3] flex items-center justify-center gap-[10px] font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
+                  <span>
+                    <LeftArrowIcon />
+                  </span>{" "}
+                  Prev
+                </button>
+                <button className="w-[80px] h-[61px] bg-[#80C4D3] flex items-center justify-center gap-[10px] font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-r-[5px]">
+                  {" "}
+                  Next
+                  <span>
+                    <RightArrowIcon2 />
+                  </span>
+                </button>
+              </div>
+              <div className="flex gap-[1px]">
+                <button className="w-[75px] h-[61px] bg-[#80C4D3]  font-poppins font-medium text-[14px] text-white leading-[21px] border border-[#80C4D3] group hover:bg-white hover:text-[#80C4D3] duration-300 rounded-l-[5px]">
+                  Page
+                </button>
+                <Dropdown />
+              </div>
             </div>
           </div>
         </div>

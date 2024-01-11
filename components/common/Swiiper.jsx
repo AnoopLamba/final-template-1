@@ -10,7 +10,7 @@ import { FacebookIcon, InstagramIcon, WhatsappIcon } from "./Icon";
 export default function Swiiper() {
   return (
     <div className="bg-[#EDEDED] mt-[50px] pb-[40px]">
-      <h1 className="text-[rgba(34,52,61,0.70)] px-4 max-sm:text-center max-w-[1050px] w-full pt-3 font-poppins text-[30px] font-medium uppercase">
+      <h1 className="text-[rgba(34,52,61,0.70)] px-4 max-sm:text-center max-w-[1050px] w-full mx-auto pt-3 font-poppins text-[30px] font-medium uppercase">
         Meet Our <span className="text-[#80C4D3]">Staff</span>
       </h1>
 

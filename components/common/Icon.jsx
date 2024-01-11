@@ -36,6 +36,7 @@ export const PaginationArrowRightIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
+        className="group-hover:fill-[#80C4D3]"
         d="M5.4388 4.46287C5.72977 4.22288 5.72977 3.77712 5.4388 3.53713L1.73177 0.479624C1.34043 0.156848 0.75 0.435215 0.75 0.942496V7.0575C0.75 7.56478 1.34043 7.84315 1.73177 7.52038L5.4388 4.46287Z"
         fill="white"
       />
@@ -53,6 +54,7 @@ export const PaginationArrowLeftIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
+        className="group-hover:fill-[#80C4D3]"
         d="M0.561203 3.53713C0.270231 3.77712 0.270231 4.22288 0.561203 4.46287L4.26823 7.52038C4.65957 7.84315 5.25 7.56479 5.25 7.0575L5.25 0.942497C5.25 0.435216 4.65957 0.156849 4.26823 0.479624L0.561203 3.53713Z"
         fill="white"
       />
@@ -608,7 +610,7 @@ export const RightArrowIcon2 = () => {
     </>
   );
 };
-export const DropdownIcon = () => {
+export const DropdownIcon = ({}) => {
   return (
     <>
       <svg
@@ -621,6 +623,7 @@ export const DropdownIcon = () => {
         <path
           d="M3.53713 5.4388C3.77712 5.72977 4.22288 5.72977 4.46287 5.4388L7.52038 1.73177C7.84315 1.34043 7.56479 0.75 7.0575 0.75H0.942497C0.435216 0.75 0.156849 1.34043 0.479624 1.73177L3.53713 5.4388Z"
           fill="white"
+          className="group-hover:fill-[#80C4D3]"
         />
       </svg>
     </>

@@ -7,6 +7,7 @@ import {
   WhatsappIcon,
   WhiteFbIcon,
   WhiteInstaIcon,
+  WhiteTwitterIcon,
   WhiteWhatsappIcon,
 } from "./Icon";
 

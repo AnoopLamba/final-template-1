@@ -639,7 +639,7 @@ export const WhatsappIcon = () => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+        className="w-[24px] h-[24px]"
         viewBox="0 0 24 24"
         fill="none"
       >
@@ -658,7 +658,7 @@ export const TwitterIcon = () => {
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
-        className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+        className="w-[24px] h-[24px]"
         viewBox="0 0 24 24"
         fill="none"
       >

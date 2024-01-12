@@ -1,4 +1,3 @@
-import handler from "@/pages/api/hello";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
@@ -13,62 +12,76 @@ const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => {
         setIsMenuOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handler);
+
+    // preveting body from scrolling
+    if (isMenuOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
 
     return () => {
       document.removeEventListener("mousedown", handler);
+      document.body.style.overflowY = "auto";
+      document.body.style.height = "auto";
     };
-  });
+  }, [isMenuOpen]);
 
   return (
+    // Sidebar Container
     <div
-      ref={sidebarRef}
-      className={`z-10 fixed top-0 bottom-0 right-0 bg-[#80C4D3] w-64 transition-all ease-in-out ${
-        isMenuOpen ? "translate-x-0" : "translate-x-full"
-      } shadow-xl border-l`}
+      className={`z-10 fixed ${isMenuOpen && "inset-0"} bg-black bg-opacity-65`}
     >
-      {/* Sidebar content */}
-      <div className="p-4 text-white">
-        <Link href="/">
-          <Image
-            className="max-sm:w-[90px]"
-            src="/img/Logo-img.png"
-            width={100}
-            height={50}
-            alt="logo"
-          />
-        </Link>
-        {/* Add your sidebar links or content here */}
-        <ul className="mt-4">
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/about">About Us</Link>
-          </li>
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/management">Management</Link>
-          </li>
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/news">News & Event</Link>
-          </li>
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/gallery">Gallery</Link>
-          </li>
-          <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
-            <Link href="/contact">Contact us</Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* Menu toggle button */}
-      <button
-        className="fixed top-4 right-4 hover:scale-110 transition-all duration-200 ease-in-out"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      {/* Sidebar */}
+      <div
+        ref={sidebarRef}
+        className={`z-[40] fixed h-full right-0 bg-[#80C4D3] w-64 transition-all ease-in-out ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } shadow-xl border-l`}
       >
-        <MenuCloseIcon />
-      </button>
+        {/* Sidebar content */}
+        <div className="p-4 text-white">
+          <Link href="/">
+            <Image
+              className="max-sm:w-[90px]"
+              src="/img/Logo-img.png"
+              width={100}
+              height={50}
+              alt="logo"
+            />
+          </Link>
+          {/* Add your sidebar links or content here */}
+          <ul className="mt-4">
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/about">About Us</Link>
+            </li>
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/management">Management</Link>
+            </li>
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/news">News & Event</Link>
+            </li>
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/gallery">Gallery</Link>
+            </li>
+            <li className="py-2 hover:scale-105 cursor-pointer origin-left transition-all duration-200 ease-in-out">
+              <Link href="/contact">Contact us</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Menu toggle button */}
+        <button
+          className="fixed top-4 right-4 hover:scale-110 transition-all duration-200 ease-in-out"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <MenuCloseIcon />
+        </button>
+      </div>
     </div>
   );
 };
